@@ -1,0 +1,104 @@
+/* KanbanColumn.css */
+
+/* General kanban board styles */
+.kanban-column {
+    width: 300px;
+    background-color: #f4f5f7;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header styles for column titles */
+  .kanban-column h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Content area inside each column */
+  .kanban-column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Styling for individual kanban tickets */
+  .kanban-ticket {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;  /* Adds space between ticket containers */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* On hover, lift the ticket */
+  .kanban-ticket:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ticket title */
+  .kanban-ticket h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Ticket description */
+  .kanban-ticket p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    word-wrap: break-word;
+    margin: 0;
+  }
+  
+  /* Footer for ticket details like ID and priority */
+  .kanban-ticket-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  /* ID styling */
+  .kanban-ticket-id {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Priority label styling */
+  .kanban-ticket-priority {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  /* Different priority colors */
+  .kanban-ticket-priority[data-priority="high"] {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .kanban-ticket-priority[data-priority="medium"] {
+    background-color: #ffb84d;
+    color: white;
+  }
+  
+  .kanban-ticket-priority[data-priority="low"] {
+    background-color: #4caf50;
+    color: white;
+  }  

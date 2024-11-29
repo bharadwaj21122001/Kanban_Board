@@ -1,0 +1,26 @@
+.kanban-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .kanban-header label {
+    font-weight: bold;
+  }
+  
+  .dropdown-type,
+  .dropdown-options {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .dropdown-type {
+    width: 150px;
+  }
+  
+  .dropdown-options {
+    width: 180px;
+  }  
